@@ -37,10 +37,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 from transformers import BertTokenizer, BertModel
 
+path = "/data/"
 
 def merge_data_files():
-    data_files = ['products-data-0.tsv', 'products-data-1.tsv', 'products-data-2.tsv', 'products-data-3.tsv']
-    review_files = ['reviews-0.tsv', 'reviews-1.tsv', 'reviews-2.tsv', 'reviews-3.tsv']
+    data_files = [path + 'products-data-0.tsv', path + 'products-data-1.tsv', path + 'products-data-2.tsv', path + 'products-data-3.tsv']
+    review_files = [path + 'reviews-0.tsv', path + 'reviews-1.tsv', path + 'reviews-2.tsv', path + 'reviews-3.tsv']
 
     merged_data = pd.DataFrame()
 
